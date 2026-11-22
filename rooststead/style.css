@@ -1,0 +1,101 @@
+/* Rooststead™ · Copyright © 2026 Angel Tech Corporation Industries L.L.C. All rights reserved.
+   Rooststead's public pages: the app's paper, olive and blaze (src/components/FieldVet.tsx).
+   No scripts, no outside fonts, no cookies: the type is whatever the reader's device already has. */
+:root {
+  color-scheme: light;
+  --paper: #E3DECB;
+  --card: #F1EDDD;
+  --ink: #232B1C;
+  --olive: #47522F;
+  --olive-soft: #6B7452;
+  --line: #B9B29A;
+  --blaze: #C24914;
+  --blaze-dark: #8F3006;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --cond: "Avenir Next Condensed", "Barlow Condensed", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: var(--blaze-dark); text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { color: var(--ink); }
+a:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+p { margin: 12px 0; }
+ul, ol { margin: 10px 0; padding-left: 22px; }
+li { margin: 6px 0; }
+sup { font-size: .55em; letter-spacing: 0; vertical-align: super; line-height: 0; }
+.hm { font-weight: 700; letter-spacing: .18em; white-space: nowrap; }
+
+/* the masthead on the inner pages: the app's double rule */
+header.site { display: flex; align-items: center; gap: 12px; padding-bottom: 12px; border-bottom: 3px double var(--olive); }
+header.site img { width: 48px; height: 48px; border-radius: 11px; flex: none; }
+header.site a { color: var(--ink); text-decoration: none; font: 700 26px/1 var(--cond); letter-spacing: .04em; text-transform: uppercase; }
+header.site div > span { display: block; margin-top: 5px; color: var(--olive); font: 11px/1.2 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+
+/* the page links, drawn like the app's tabs */
+nav.links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; margin: 14px 0 28px; border: 1px solid var(--olive); background: var(--olive); }
+nav.links a { padding: 10px 2px; background: var(--card); color: var(--olive); text-align: center; text-decoration: none; font: 600 15px/1.2 var(--cond); letter-spacing: .06em; text-transform: uppercase; }
+nav.links a:hover { color: var(--ink); }
+nav.links a[aria-current="page"] { background: var(--olive); color: var(--card); }
+
+h1 { margin: 0 0 6px; font: 700 36px/1.05 var(--cond); letter-spacing: .03em; text-transform: uppercase; }
+h2 { margin: 38px 0 8px; padding-top: 14px; border-top: 1px solid var(--line); font: 700 22px/1.2 var(--cond); letter-spacing: .04em; text-transform: uppercase; }
+h3 { margin: 22px 0 4px; font-size: 17.5px; line-height: 1.35; }
+.date { margin: 0 0 22px; color: var(--olive); font: 12.5px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+
+/* boxes: the short version, and the safety notice */
+.summary, .warn, .legal { margin: 18px 0; padding: 14px 18px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--olive); }
+.warn { border-left-color: var(--blaze); }
+.legal { border-left-color: var(--ink); }
+.summary > strong, .warn > strong { display: block; font: 700 17px/1.2 var(--cond); letter-spacing: .08em; text-transform: uppercase; }
+.warn > strong { color: var(--blaze-dark); }
+.summary ul, .warn ul { margin: 8px 0 0; padding-left: 18px; }
+.summary p, .warn p, .legal p { margin: 8px 0 0; }
+.legal p:first-child { margin-top: 0; }
+
+/* the home page */
+.hero { text-align: center; padding: 6px 0 4px; }
+.hero img.icon { width: 128px; height: 128px; border-radius: 28px; border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(35, 43, 28, .22); }
+.hero h1 { margin-top: 16px; font-size: clamp(32px, 11vw, 52px); }
+.hero p { margin: 6px 0 0; font-size: 19px; }
+.hero .const { color: var(--olive); font: 12px/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; margin-top: 10px; }
+.hero .stamp { display: inline-block; margin-top: 16px; padding: 8px 12px; border: 2px solid var(--blaze-dark); color: var(--blaze-dark); font: 700 14px/1.35 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 30px 0 8px; }
+.shots img { display: block; width: 100%; height: auto; border: 1px solid var(--olive); background: var(--card); }
+.plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 14px 0; }
+.plan { padding: 14px 16px; background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--olive); }
+.plan.pro { border-top-color: var(--blaze); }
+.plan .tag { margin: 0; color: var(--olive); font: 11.5px/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.plan.pro .tag { color: var(--blaze-dark); }
+.plan .price { margin: 4px 0 6px; font: 700 26px/1.15 var(--cond); letter-spacing: .02em; }
+.plan ul { margin: 6px 0 0; padding-left: 20px; font-size: 16px; }
+.fine { font-size: 15px; color: var(--olive); }
+
+/* the support page */
+.faq p { margin: 4px 0 0; }
+.mail { display: inline-block; margin: 2px 0 4px; padding: 12px 18px; background: var(--olive); color: var(--card); text-decoration: none; font: 700 17px/1.2 var(--cond); letter-spacing: .08em; text-transform: uppercase; }
+.mail:hover { color: var(--card); background: var(--ink); }
+
+/* the brand block (ANGEL TECH Brand and Trademark Standard, sections 3 and 4) */
+footer { margin-top: 56px; padding-top: 20px; border-top: 3px double var(--olive); color: var(--olive); font-size: 14px; }
+footer.angeltech { text-align: center; }
+footer.angeltech .sigil { display: block; height: 48px; width: auto; margin: 0 auto 10px; color: var(--ink); }
+footer.angeltech p { margin: 6px 0; }
+footer.angeltech .eyebrow { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 0; }
+footer.angeltech .mark { font-weight: 600; letter-spacing: .18em; white-space: nowrap; color: var(--ink); font-size: 16px; margin-top: 2px; }
+footer.angeltech .small { font-size: 12.5px; }
+
+@media (max-width: 520px) {
+  h1 { font-size: 31px; }
+  h2 { font-size: 20px; }
+  .hero p { font-size: 18px; }
+  .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .shots img:nth-child(3) { display: none; }
+  .plans { grid-template-columns: minmax(0, 1fr); }
+}
+@media print {
+  body { background: #fff; }
+  nav.links, .mail { display: none; }
+}

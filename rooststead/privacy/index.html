@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Rooststead</title>
+<meta name="description" content="What Rooststead keeps on your device, what a lookup sends and to whom, what our server keeps, and how to erase it. No account, no ads, no tracking.">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><img src="../icon.png" alt=""><div><a href="../" translate="no">Rooststead<sup>™</sup></a><span>by <span class="hm" translate="no">ANGEL TECH<sup>™</sup></span></span></div></header>
+  <nav class="links" aria-label="Pages"><a href="../">About</a><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../terms/">Terms</a></nav>
+
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective November 22, 2026</p>
+
+  <p>Rooststead (on the App Store, Rooststead: Field Vet) is a home animal-care manual for iPhone and iPad. It is made and run by Angel Tech Corporation Industries L.L.C., an Oklahoma limited liability company, 811 N Market, Watonga, Oklahoma 73772, USA (“we”, “us”). This policy says what happens to your information when you use the app.</p>
+
+  <div class="summary">
+    <strong>The short version</strong>
+    <ul>
+      <li>No account, no ads, no tracking and no analytics.</li>
+      <li>Everything you save (your animals, the lump log, the library, your lists and settings) stays on your device.</li>
+      <li>A lookup sends the animal’s details, what you typed and any photos you attached to our server, which passes them to Anthropic’s Claude to write the answer. None of that is sent until you agree in the app.</li>
+      <li>Our server keeps counts of lookups. It does not keep what you typed, your photos or the answers.</li>
+      <li>Rooststead Pro is bought through Apple. We never see your payment details.</li>
+      <li>We do not sell your information, and we do not share it for advertising.</li>
+    </ul>
+  </div>
+
+  <h2>What stays on your device</h2>
+  <p>The app saves these on your device, inside the app:</p>
+  <ul>
+    <li>your animals on file and what you entered about each one;</li>
+    <li>the lump log;</li>
+    <li>your library of filed answers;</li>
+    <li>the medication and grass lists you have looked up, and the region you typed for the grass guide;</li>
+    <li>your settings, including whether you have agreed to the lookup notice.</li>
+  </ul>
+  <p>There is no account and nothing syncs. We cannot see these records. They leave your device only as part of a lookup you ask for (the next section), or when you make a backup and send it somewhere yourself.</p>
+  <p><strong>Backup and restore</strong> makes a copy of your records for you to keep. It goes only where you put it. If you back up your iPhone or iPad with iCloud or a computer, that backup may include the app’s records, under your own Apple settings.</p>
+
+  <h2>What a lookup sends</h2>
+  <p>A lookup is a question the app asks our server for you: a diagnostic, a care protocol, a research question, the medication reference, a medication lookup, the grass guide or a grass lookup. Before your first lookup the app shows what will be sent and to whom, and asks you to agree. Nothing about your animals, nothing you typed and no photo is sent before you agree.</p>
+  <p>Each lookup sends:</p>
+  <ul>
+    <li><strong>The animal’s details</strong> for that lookup: species, breed, age, weight, whether it is spayed or neutered, allergies and your notes about it.</li>
+    <li><strong>What you typed or picked</strong> for that lookup, such as the areas affected, how long it has been going on, your description, your question, a product or plant name, and a region if you typed one.</li>
+    <li><strong>Any photos you attached</strong> (up to three, on a diagnostic lookup).</li>
+    <li><strong>The app’s random device id.</strong> The app makes this id itself the first time it runs. It is not your device’s serial number or an advertising id, and it is not linked to your name, your Apple Account or any other app. Its only job is to let the server count the free lookups. It is kept in your device’s secure storage (the Keychain), so it can stay the same if you delete the app and install it again.</li>
+    <li><strong>Apple’s signed record of your subscription</strong>, when Rooststead Pro is active, so the server can check that it is real. It names the plan, its dates and price, the App Store country, Apple’s transaction numbers and a few technical fields Apple adds. It does not contain your name, your email, your Apple Account or your payment details.</li>
+  </ul>
+  <p>When an answer comes with reference photos, the app asks our server to find them. That request sends the names of the conditions or plants and the species, with the same device id and subscription record.</p>
+  <p>To show your plan and how many lookups you have left, the app may also ask our server with just the device id and, for subscribers, the subscription record. That check carries nothing about you or your animals.</p>
+  <p>The app uses the camera or your photos only when you choose to add a photo to a lookup, and it uses only the photos you take or pick. It does not ask for your location.</p>
+
+  <h2>Who receives it</h2>
+  <ul>
+    <li><strong>Our server.</strong> It runs on Cloudflare, our hosting provider.</li>
+    <li><strong>Anthropic.</strong> Our server passes the lookup (the animal’s details, what you typed and any photos) to Anthropic’s Claude models, which write the answer. The device id and Apple’s subscription record are not passed to Anthropic.</li>
+  </ul>
+  <p>No one else receives your lookups. We do not sell them, and no advertiser sees them.</p>
+
+  <h2>What our server keeps</h2>
+  <p>The server works on a lookup only while it is answering it. Once the answer has been sent back to the app, the server keeps none of it.</p>
+  <p>It keeps counts only:</p>
+  <ul>
+    <li><strong>Free lookups and free photo requests used by each install.</strong> The counts are kept under a scrambled form of the device id. The scrambling works one way: the code cannot be turned back into the id. These counts are kept so the free lookups cannot be reset.</li>
+    <li><strong>Today’s lookups and photo requests for each subscription</strong>, under a scrambled form of Apple’s subscription number. They are deleted shortly after the day ends.</li>
+    <li><strong>Today’s free lookups from each internet connection</strong>, under a scrambled form of the network’s address, and a total for the whole app. These guard against abuse and are deleted shortly after the day ends. Short per-minute limits work the same way.</li>
+    <li><strong>One log line for each request:</strong> the kind of lookup, whether the plan was free or Pro, whether it worked and how long it took.</li>
+  </ul>
+  <p>It does not keep or log:</p>
+  <ul>
+    <li>what you typed, your animals’ details, your photos or the answers;</li>
+    <li>your name, email or Apple Account, which it never receives;</li>
+    <li>the device id itself, or Apple’s transaction numbers;</li>
+    <li>your internet (IP) address. Like any internet service, our server receives that address when the app connects. It uses it only to make the scrambled network code above;</li>
+    <li>your location, or any advertising id.</li>
+  </ul>
+
+  <h2>Anthropic and Cloudflare</h2>
+  <p>Anthropic and Cloudflare handle this data for us, as our service providers, under their own terms. Each may keep request data for a limited time for safety and to prevent abuse. Their own pages say how: <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</p>
+  <p>Our server and our providers operate in the United States and other countries, so a lookup may be handled outside the country you are in.</p>
+
+  <h2>Reference photos</h2>
+  <p>Some answers show reference photos from Wikimedia Commons. Our server finds them by searching Wikimedia Commons for the name of the condition or plant, with the species. Anthropic’s Claude then picks which of the photos found, if any, fits the name. That search comes from our server, not from your device, and carries nothing about you.</p>
+  <p>When a photo is shown, your device loads it straight from Wikimedia’s servers. So Wikimedia sees your device’s internet (IP) address and the usual technical details of a web request, as any website does when you load a picture from it. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia’s privacy policy</a> applies to that.</p>
+
+  <h2>Rooststead Pro purchases</h2>
+  <p>Rooststead Pro is sold through Apple’s App Store. Apple handles the payment and your Apple Account under <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>. We never receive your name, your payment details or your Apple Account. The app asks Apple, on your device, whether Rooststead Pro is active, and sends Apple’s signed record with a lookup so our server can check it. Apple also gives us sales and subscription reports that do not identify you.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>We do not sell your personal information.</li>
+    <li>We do not share it for advertising.</li>
+    <li>There are no ads in the app.</li>
+    <li>There is no tracking across apps or websites.</li>
+    <li>There is no analytics or advertising software (SDK) in the app.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Rooststead is made for adults who look after animals. It is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child under 13 has sent us personal information, email us at the address below.</p>
+
+  <h2>Erasing your information</h2>
+  <ul>
+    <li><strong>On your device:</strong> open Settings in the app and tap <strong>Erase everything on this device</strong>. Deleting the app also deletes what it saved. The random device id is not one of your records. It may stay in your device’s Keychain, including after the app is deleted.</li>
+    <li><strong>On our server:</strong> there is nothing that identifies you. The server holds only the counts described above, under scrambled codes that we cannot match to a person. So we have nothing of yours to look up or delete. You can still ask: email us and we will answer within 45 days.</li>
+    <li><strong>With our providers:</strong> anything Anthropic or Cloudflare kept for safety is deleted on their own schedules, under their policies linked above.</li>
+  </ul>
+
+  <h2>Withdrawing the AI permission</h2>
+  <p>You can take back your agreement to the lookup notice at any time: open Settings in the app and withdraw it there. After that the app sends no lookups until you agree again. Everything that works without a lookup keeps working. Withdrawing does not undo lookups that were already sent.</p>
+
+  <h2>Security</h2>
+  <p>Lookups travel to our server over an encrypted connection (HTTPS). The server keeps no lookup content, so none of it is stored there to be exposed. The records on your device are protected by your device’s own passcode and security: anyone who can unlock your device can open the app and read them. No system is perfectly secure, and we cannot promise that nothing will ever go wrong.</p>
+
+  <h2>Your privacy rights</h2>
+  <p>Depending on where you live, for example in a US state with a consumer privacy law, you may have the right to know what personal information a business holds about you, to get a copy of it, to correct it, to delete it, and to opt out of its sale, of sharing for targeted advertising and of certain profiling (we do none of those three). Because our server keeps only counts under scrambled codes, we normally have nothing we can find, copy, correct or delete for a particular person. You can still send a request to <a href="mailto:angeltechcorporationindustries@gmail.com?subject=Rooststead%20privacy%20request">angeltechcorporationindustries<wbr>@gmail.com</a>. We answer within 45 days and tell you what we found. If we decline a request we explain why, and you can appeal by replying to that message. We never treat anyone differently for using these rights. If you live in the European Union, the United Kingdom or another place with a similar law, the same applies: a lookup is sent only with your agreement, which you can withdraw at any time, and you can also complain to your local data protection authority.</p>
+
+  <h2>This website</h2>
+  <p>These pages use no cookies, no scripts and no trackers. They are hosted by GitHub Pages. Like most web hosts, GitHub may keep short technical logs, such as IP addresses, to run and secure the service. We do not use them to identify anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we update this page and the date at the top. If a future version of the app sent or kept anything more than this page describes, we would change this page and say so in the release notes before that version came out.</p>
+
+  <h2>Contact</h2>
+  <p>Angel Tech Corporation Industries L.L.C.<br>811 N Market, Watonga, Oklahoma 73772, USA<br><a href="mailto:angeltechcorporationindustries@gmail.com">angeltechcorporationindustries<wbr>@gmail.com</a></p>
+
+  <footer class="angeltech">
+    <svg class="sigil" fill="currentColor" role="img" aria-label="ANGEL TECH sigil" xmlns="http://www.w3.org/2000/svg" viewBox="66 120 248 110"><polygon points="200,172.8 307.9,125 308.9,127.2 203,179.2"/><polygon points="204.2,179.6 309.5,155.7 310.1,158.1 205.8,186.4"/><polygon points="208.3,186.5 304.3,183.8 304.5,186.2 208.7,193.5"/><polygon points="212.5,193.5 293.4,207.2 293,209.6 211.5,200.5"/><polygon points="216.6,200.7 278.3,224.3 277.5,226.7 214.4,207.3"/><polygon points="180,172.8 72.1,125 71.1,127.2 177,179.2"/><polygon points="175.8,179.6 70.5,155.7 69.9,158.1 174.2,186.4"/><polygon points="171.7,186.5 75.7,183.8 75.5,186.2 171.3,193.5"/><polygon points="167.5,193.5 86.6,207.2 87,209.6 168.5,200.5"/><polygon points="163.4,200.7 101.7,224.3 102.5,226.7 165.6,207.3"/><path fill-rule="evenodd" d="M151.5 224 L184.5 158 L195.5 158 L228.5 224 L217.5 224 L209.25 207.5 L170.75 207.5 L162.5 224 Z M190 169 L203.75 196.5 L176.25 196.5 Z"/><path d="M217.5 135.45 L203.75 147.83 L176.25 147.83 L162.5 135.45 L162.5 140.95 L176.25 153.33 L203.75 153.33 L217.5 140.95 Z"/><path fill-rule="evenodd" d="M217.5 135.45 L203.75 147.83 L176.25 147.83 L162.5 135.45 L176.25 123.08 L203.75 123.08 Z M208.15 135.45 L199.08 143.65 L180.93 143.65 L171.85 135.45 L180.93 127.26 L199.08 127.26 Z"/></svg>
+    <p class="eyebrow">A product of</p>
+    <p class="mark" translate="no">ANGEL TECH<sup>™</sup></p>
+    <p>© 2026 Angel Tech Corporation Industries L.L.C. All rights reserved.</p>
+    <p class="small">ANGEL TECH, the ANGEL TECH sigil and Rooststead are trademarks of Angel Tech Corporation Holding L.C., used under license by Angel Tech Corporation Industries L.L.C.</p>
+    <p><a href="../">About</a> · <a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Use</a> · <a href="mailto:angeltechcorporationindustries@gmail.com">angeltechcorporationindustries<wbr>@gmail.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
