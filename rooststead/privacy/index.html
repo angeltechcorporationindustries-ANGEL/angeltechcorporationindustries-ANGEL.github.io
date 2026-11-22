@@ -23,7 +23,7 @@
     <ul>
       <li>No account, no ads, no tracking and no analytics.</li>
       <li>Everything you save (your animals, the lump log, the library, your lists and settings) stays on your device.</li>
-      <li>A lookup sends the animal’s details, what you typed and any photos you attached to our server, which passes them to Anthropic’s Claude to write the answer. None of that is sent until you agree in the app.</li>
+      <li>A lookup sends the animal’s details, what you typed and any photos you attached (and, for a Field Computer question, that conversation and the animal’s lump log) to our server, which passes them to Anthropic’s Claude to write the answer. None of that is sent until you agree in the app.</li>
       <li>Our server keeps counts of lookups. It does not keep what you typed, your photos or the answers.</li>
       <li>Rooststead Pro is bought through Apple. We never see your payment details.</li>
       <li>We do not sell your information, and we do not share it for advertising.</li>
@@ -43,12 +43,13 @@
   <p><strong>Backup and restore</strong> makes a copy of your records for you to keep. It goes only where you put it. If you back up your iPhone or iPad with iCloud or a computer, that backup may include the app’s records, under your own Apple settings.</p>
 
   <h2>What a lookup sends</h2>
-  <p>A lookup is a question the app asks our server for you: a diagnostic, a care protocol, a research question, the medication reference, a medication lookup, the grass guide or a grass lookup. Before your first lookup the app shows what will be sent and to whom, and asks you to agree. Nothing about your animals, nothing you typed and no photo is sent before you agree.</p>
+  <p>A lookup is a question the app asks our server for you: a diagnostic, a care protocol, a research question, the medication reference, a medication lookup, the grass guide, a grass lookup or a question to the Field Computer that it cannot answer on your device. Before your first lookup the app shows what will be sent and to whom, and asks you to agree. Nothing about your animals, nothing you typed and no photo is sent before you agree.</p>
   <p>Each lookup sends:</p>
   <ul>
     <li><strong>The animal’s details</strong> for that lookup: species, breed, age, weight, whether it is spayed or neutered, allergies and your notes about it.</li>
     <li><strong>What you typed or picked</strong> for that lookup, such as the areas affected, how long it has been going on, your description, your question, a product or plant name, and a region if you typed one.</li>
     <li><strong>Any photos you attached</strong> (up to three, on a diagnostic lookup).</li>
+    <li><strong>For a Field Computer question:</strong> your question, the earlier lines of that conversation (eight at most) and, when you have chosen an animal for it, that animal’s lump log entries (where, size, feel, note and date). In lines the Field Computer wrote from your records, an animal’s name is replaced before sending. What you typed yourself is sent as you typed it.</li>
     <li><strong>The app’s random device id.</strong> The app makes this id itself the first time it runs. It is not your device’s serial number or an advertising id, and it is not linked to your name, your Apple Account or any other app. Its only job is to let the server count the free lookups. It is kept in your device’s secure storage (the Keychain), so it can stay the same if you delete the app and install it again.</li>
     <li><strong>Apple’s signed record of your subscription</strong>, when Rooststead Pro is active, so the server can check that it is real. It names the plan, its dates and price, the App Store country, Apple’s transaction numbers and a few technical fields Apple adds. It does not contain your name, your email, your Apple Account or your payment details.</li>
   </ul>
