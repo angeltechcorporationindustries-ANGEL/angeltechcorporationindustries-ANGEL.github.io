@@ -21,10 +21,12 @@
   <div class="summary">
     <strong>The short version</strong>
     <ul>
-      <li>No account, no ads, no tracking and no analytics.</li>
+      <li>No account, no ads and no tracking.</li>
       <li>Everything you save (your animals, the lump log, the library, your lists and settings) stays on your device.</li>
       <li>A lookup sends the animal’s details, what you typed and any photos you attached (and, for a Field Computer question, that conversation and the animal’s lump log) to our server, which passes them to Anthropic’s Claude to write the answer. None of that is sent until you agree in the app.</li>
-      <li>Our server keeps counts of lookups. It does not keep what you typed, your photos or the answers.</li>
+      <li>Our server does not keep what you typed, your photos or the answers.</li>
+      <li>To make the answers better, it keeps counts of what is looked up (the kind of lookup, the species, the subject in a few words, and the country or US state). The counts are tied to no one, and you can turn them off in Settings.</li>
+      <li>“Did this help?” under an answer sends your yes or no. It sends your note, or the question and answer, only if you choose.</li>
       <li>Rooststead Pro is bought through Apple. We never see your payment details.</li>
       <li>We do not sell your information, and we do not share it for advertising.</li>
     </ul>
@@ -65,8 +67,8 @@
   <p>No one else receives your lookups. We do not sell them, and no advertiser sees them.</p>
 
   <h2>What our server keeps</h2>
-  <p>The server works on a lookup only while it is answering it. Once the answer has been sent back to the app, the server keeps none of it.</p>
-  <p>It keeps counts only:</p>
+  <p>The server works on a lookup only while it is answering it. Once the answer has been sent back to the app, the server keeps none of what you typed, none of your photos and none of the answer.</p>
+  <p>It keeps these counts so the limits work:</p>
   <ul>
     <li><strong>Free lookups and free photo requests used by each install.</strong> The counts are kept under a scrambled form of the device id. The scrambling works one way: the code cannot be turned back into the id. These counts are kept so the free lookups cannot be reset.</li>
     <li><strong>Today’s lookups and photo requests for each subscription</strong>, under a scrambled form of Apple’s subscription number. They are deleted shortly after the day ends.</li>
@@ -79,8 +81,23 @@
     <li>your name, email or Apple Account, which it never receives;</li>
     <li>the device id itself, or Apple’s transaction numbers;</li>
     <li>your internet (IP) address. Like any internet service, our server receives that address when the app connects. It uses it only to make the scrambled network code above;</li>
-    <li>your location, or any advertising id.</li>
+    <li>your location more exactly than a country or a US state (see below), or any advertising id.</li>
   </ul>
+
+  <h2>What we keep to make the answers better</h2>
+  <p>Rooststead’s answers are written by AI. To learn what people need, what helps and what is wrong, the server keeps tallies of what is looked up. For each answered lookup it adds one to these counts:</p>
+  <ul>
+    <li><strong>The kind of lookup</strong> (for example a diagnostic or a medication lookup), whether the plan was free or Pro, and whether the answer was marked urgent.</li>
+    <li><strong>The species.</strong></li>
+    <li><strong>The subject, in a few plain words</strong>, such as “malassezia dermatitis”, “terbinafine” or “johnson grass”. It is the name of the condition, product or plant the lookup was about, or a short general subject the AI names for a question. It is never the sentence you typed, and anything that looks like a name, a number, an address or an email is left out.</li>
+    <li><strong>The country, or the US state</strong>, the request came from. Our server reads this from a note its host (Cloudflare) puts on each request. It is worked out from your internet address. The address itself is not kept.</li>
+  </ul>
+  <p>These are counts by day and by week. They are not tied to your install, your subscription or your internet address, and they are deleted after 400 days. We also count how many lookups failed and how many were stopped because the free lookups were used up.</p>
+  <p><strong>You can turn the tallies off.</strong> In the app open <strong>Settings</strong>, find <strong>Help improve Rooststead</strong> and tap <strong>Turn off</strong>. The server then keeps no tallies for your lookups, and “Did this help?” is not shown.</p>
+
+  <h3>“Did this help?”</h3>
+  <p>Under an answer the app asks “Did this help?”. Nothing is sent unless you tap <strong>Yes</strong> or <strong>No</strong>. Your answer is then sent and counted against that answer’s subject. If you tap No you can pick a reason and add a short note, and you can tick a box to send the question and the answer as text so we can check it. Photos are never sent with feedback, and the app does not include your animal’s name.</p>
+  <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
 
   <h2>Anthropic and Cloudflare</h2>
   <p>Anthropic and Cloudflare handle this data for us, as our service providers, under their own terms. Each may keep request data for a limited time for safety and to prevent abuse. Their own pages say how: <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</p>
@@ -99,7 +116,7 @@
     <li>We do not share it for advertising.</li>
     <li>There are no ads in the app.</li>
     <li>There is no tracking across apps or websites.</li>
-    <li>There is no analytics or advertising software (SDK) in the app.</li>
+    <li>There is no advertising software and no outside analytics software (SDK) in the app. The tallies described above are kept by our own server.</li>
   </ul>
 
   <h2>Children</h2>
