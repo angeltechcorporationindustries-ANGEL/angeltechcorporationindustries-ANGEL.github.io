@@ -1,0 +1,63 @@
+/* ThrustWright's public pages: the app's dark sheet, layout blue and flame orange (src/styles.css). */
+:root {
+  color-scheme: dark;
+  --bg: #151A21;
+  --card: #1E252F;
+  --card-2: #262F3B;
+  --text: #E7ECF2;
+  --muted: #9AA6B6;
+  --accent: #86AAFF;
+  --gold: #F2A85B;
+  --line: #37424F;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--gold); text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { color: var(--text); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+header.site { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header.site img { width: 52px; height: 52px; border-radius: 12px; }
+header.site a { color: var(--text); text-decoration: none; font-weight: 800; font-size: 19px; letter-spacing: -0.01em; }
+header.site span { display: block; color: var(--muted); font-size: 14px; font-weight: 600; }
+nav.links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 32px; padding: 12px 16px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+nav.links a { color: var(--text); font-weight: 700; text-decoration: none; }
+nav.links a[aria-current="page"] { color: var(--gold); }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 23px; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+.date { color: var(--muted); margin: 0 0 24px; font-weight: 600; }
+.summary { padding: 16px 20px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); }
+.summary ul { margin: 8px 0 0; padding-left: 22px; }
+li { margin: 4px 0; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.hero { text-align: center; padding: 8px 0 12px; }
+.hero img.icon { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); }
+.hero h1 { font-size: 44px; margin-top: 18px; }
+.hero p { color: var(--muted); font-size: 19px; margin: 6px 0 0; }
+.hero .const { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: var(--gold); font-size: 15px; letter-spacing: .04em; }
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 32px 0; }
+.shots img { width: 100%; height: auto; border-radius: 16px; display: block; border: 1px solid var(--line); }
+.faq h3 { color: var(--text); }
+.faq p { margin: 4px 0 0; color: #C9D2DD; }
+.mail { display: inline-block; margin-top: 6px; padding: 12px 18px; border-radius: 14px; background: var(--accent); color: #0D1526; font-weight: 800; text-decoration: none; }
+.mail:hover { color: #0D1526; filter: brightness(1.06); }
+@media (max-width: 520px) {
+  h1 { font-size: 28px; }
+  .hero h1 { font-size: 36px; }
+  .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .shots img:nth-child(3) { display: none; }
+}
+sup { font-size: .55em; letter-spacing: 0; vertical-align: super; line-height: 0; }
+.hm { font-weight: 700; letter-spacing: .18em; white-space: nowrap; }
+.summary p { margin: 8px 0 0; }
+/* the brand block (ANGEL TECH Brand and Trademark Standard) */
+footer.angeltech { text-align: center; }
+footer.angeltech .sigil { display: block; height: 48px; width: auto; margin: 0 auto 10px; color: var(--text); }
+footer.angeltech p { margin: 6px 0; }
+footer.angeltech .eyebrow { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 0; }
+footer.angeltech .mark { font-weight: 600; letter-spacing: .18em; white-space: nowrap; color: var(--text); font-size: 16px; margin-top: 2px; }
+footer.angeltech .small { font-size: 12.5px; }
