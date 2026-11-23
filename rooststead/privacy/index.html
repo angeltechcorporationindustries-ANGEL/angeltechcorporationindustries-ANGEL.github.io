@@ -14,7 +14,7 @@
   <nav class="links" aria-label="Pages"><a href="../">About</a><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../terms/">Terms</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="date">Effective November 22, 2026</p>
+  <p class="date">Effective November 23, 2026</p>
 
   <p>Rooststead (on the App Store, Rooststead: Field Vet) is a home animal-care manual for iPhone and iPad. It is made and run by Angel Tech Corporation Industries L.L.C., an Oklahoma limited liability company, 811 N Market, Watonga, Oklahoma 73772, USA (“we”, “us”). This policy says what happens to your information when you use the app.</p>
 
@@ -50,7 +50,7 @@
   <ul>
     <li><strong>The animal’s details</strong> for that lookup: species, breed, age, weight, whether it is spayed or neutered, allergies and your notes about it.</li>
     <li><strong>What you typed or picked</strong> for that lookup, such as the areas affected, how long it has been going on, your description, your question, a product or plant name, and a region if you typed one.</li>
-    <li><strong>Any photos you attached</strong> (up to three, on a diagnostic lookup).</li>
+    <li><strong>Any photos you attached</strong> (up to three, on a diagnostic lookup or a photo comparison). Photos you choose to donate are described under “Photos you donate” below.</li>
     <li><strong>For a Field Computer question:</strong> your question, the earlier lines of that conversation (eight at most) and, when you have chosen an animal for it, that animal’s lump log entries (where, size, feel, note and date). In lines the Field Computer wrote from your records, an animal’s name is replaced before sending. What you typed yourself, or a suggested question you tapped, is sent as it reads.</li>
     <li><strong>The app’s random device id.</strong> The app makes this id itself the first time it runs. It is not your device’s serial number or an advertising id, and it is not linked to your name, your Apple Account or any other app. Its only job is to let the server count the free lookups and keep to the limits described below. It is kept in your device’s secure storage (the Keychain), so it can stay the same if you delete the app and install it again.</li>
     <li><strong>Apple’s signed record of your subscription</strong>, when Rooststead Pro is active, so the server can check that it is real. It names the plan, its dates and price, the App Store country, Apple’s transaction numbers and a few technical fields Apple adds. It does not contain your name, your email, your Apple Account or your payment details.</li>
@@ -98,14 +98,29 @@
 
   <h3>“Did this help?”</h3>
   <p>Under an answer the app asks “Did this help?”. Nothing is sent unless you tap <strong>Yes</strong> or <strong>No</strong>. Your answer is then sent, with the app’s device id (used only for the daily limit above), and counted against that answer’s subject. If you tap No you can pick a reason and add a short note, and you can tick a box to send the question and the answer as text so we can check it. Photos are never sent with feedback, and the app does not include your animal’s name.</p>
+  <p>After a yes or no, the app asks <strong>What are you doing about it?</strong> (home care, a veterinarian, a store or pharmacy product, or not sure yet). If you tap one, it is sent with the same ticket and only counted against that answer’s subject, like the yes or no; nothing else about it is kept.</p>
   <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
+
+  <h3>What others see</h3>
+  <p>Under an answer the app can show <strong>Others with this</strong>: totals from everyone who looked up the same subject in the last four weeks, namely how many lookups, the share of those who answered “Did this help?” who said yes, and the share who chose home care, a veterinarian or a store or pharmacy product. They are made only from the counts above, never from one person’s lookup, and each total is shown only once at least 10 lookups or answers are behind it. They come back with the answer to your own lookup, so nothing extra is sent to get them.</p>
 
   <h2>Anthropic and Cloudflare</h2>
   <p>Anthropic and Cloudflare handle this data for us, as our service providers, under their own terms. Each may keep request data for a limited time for safety and to prevent abuse. Their own pages say how: <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</p>
   <p>Our server and our providers operate in the United States and other countries, so a lookup may be handled outside the country you are in.</p>
 
+  <h2>Photos you donate</h2>
+  <p>After a diagnostic lookup with a photo, the app offers <strong>Donate this photo to teach Rooststead’s photo model</strong>. Nothing is donated unless you tap it, say what the problem turned out to be (or that it is not known yet), and tick that you took the photos or may share them and that they show no people. It is off while <strong>Help improve Rooststead</strong> or <strong>AI lookups</strong> is turned off.</p>
+  <ul>
+    <li><strong>What is sent and kept:</strong> the photos of that lookup (as the app redrew them, which leaves out the camera details and any location stored in the original), the species, the affected areas, what it turned out to be, who said so (a veterinarian, your own judgment, or not confirmed), and the AI’s best match as a hint. Not your animal’s name, not your notes, not your device id, not your address.</li>
+    <li><strong>What for:</strong> to train and test Rooststead’s own photo recognition and to check Rooststead’s answers. Never sold, never shown to other people as photos, never used for advertising.</li>
+    <li><strong>How long:</strong> until you delete it, and at most 3 years.</li>
+    <li><strong>Changing or deleting it:</strong> the app keeps a receipt for each donation on your device. In Settings, under <strong>Donated photos</strong>, you can say what it turned out to be, or delete one or all of them from our server. <strong>Erase everything on this device</strong> deletes them from our server first. If you deleted the app before deleting a donation, email us the date and what it showed and we will find and delete it. A model already trained with a photo keeps what it learned from it.</li>
+    <li>The app sends its device id with a donation only to limit donations to 10 a day per install; that count is deleted after the day.</li>
+  </ul>
+
   <h2>Reference photos</h2>
   <p>Some answers show reference photos from Wikimedia Commons. Our server finds them by searching Wikimedia Commons for the name of the condition or plant, with the species. Anthropic’s Claude then picks which of the photos found, if any, fits the name. That search comes from our server, not from your device, and carries nothing about you.</p>
+  <p><strong>Photo comparison.</strong> After a diagnostic lookup with a photo, you can tap <strong>Compare my photo with the reference photos</strong>. It is a lookup: the app sends your photos again, with the addresses of the reference photos it showed you. Our server fetches those reference photos from Wikimedia Commons (Wikimedia sees our server, not you) and sends them with yours to Anthropic’s Claude, which says which looks closest. Nothing of it is kept on our server.</p>
   <p>When a photo is shown, your device loads it straight from Wikimedia’s servers. So Wikimedia sees your device’s internet (IP) address and the usual technical details of a web request, as any website does when you load a picture from it. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia’s privacy policy</a> applies to that.</p>
 
   <h2>Rooststead Pro purchases</h2>
@@ -126,12 +141,13 @@
   <h2>Erasing your information</h2>
   <ul>
     <li><strong>On your device:</strong> open Settings in the app and tap <strong>Erase everything on this device</strong>. Deleting the app also deletes what it saved. The random device id is not one of your records. It may stay in your device’s Keychain, including after the app is deleted.</li>
-    <li><strong>On our server:</strong> the counts described above are kept under scrambled codes that we cannot match to a person. Feedback you chose to send (your note, and the question and answer if you ticked the box) is kept as text for up to 400 days and is not tied to your install. If you tell us what it said, we can find it and delete it. Email us and we will answer within 45 days.</li>
+    <li><strong>On our server:</strong> donated photos are deleted from Settings (see “Photos you donate”). The counts described above are kept under scrambled codes that we cannot match to a person. Feedback you chose to send (your note, and the question and answer if you ticked the box) is kept as text for up to 400 days and is not tied to your install. If you tell us what it said, we can find it and delete it. Email us and we will answer within 45 days.</li>
     <li><strong>With our providers:</strong> anything Anthropic or Cloudflare kept for safety is deleted on their own schedules, under their policies linked above.</li>
   </ul>
 
   <h2>Withdrawing the AI permission</h2>
   <p>You can take back your agreement to the lookup notice at any time: open Settings in the app and withdraw it there. After that the app sends no lookups until you agree again. Everything that works without a lookup keeps working. Withdrawing does not undo lookups that were already sent.</p>
+  <p>You can also turn AI lookups off: open Settings in the app, find <strong>AI lookups</strong> and tap <strong>Turn off</strong>. Then the app sends no lookups at all, and its answers come from a guide written into the app and stored on your device. The same guide answers when a lookup cannot be made, for example with no connection; nothing is sent for those answers.</p>
 
   <h2>Security</h2>
   <p>Lookups travel to our server over an encrypted connection (HTTPS). The server keeps no lookup content, except feedback text people choose to send, so nothing else of a lookup is stored there to be exposed. The records on your device are protected by your device’s own passcode and security: anyone who can unlock your device can open the app and read them. No system is perfectly secure, and we cannot promise that nothing will ever go wrong.</p>
