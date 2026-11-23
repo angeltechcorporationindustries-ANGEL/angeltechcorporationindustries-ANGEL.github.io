@@ -25,7 +25,7 @@
       <li>No account, no ads and no tracking.</li>
       <li>Everything you save (your animals, the lump log, the library, your lists and settings) stays on your device.</li>
       <li>A lookup sends the animal’s details, what you typed and any photos you attached (and, for a Field Computer question, that conversation and the animal’s lump log) to our server, which passes them to Anthropic’s Claude to write the answer. None of that is sent until you agree in the app.</li>
-      <li>To make the answers better, our server keeps a copy of each answered lookup, its photos and its answer, with no set end date, and counts of what is looked up (the kind of lookup, the species, the subject in a few words, and the country or US state). None of it is tied to you, your device or your internet address, and you can turn both off in Settings.</li>
+      <li>To make the answers better, our server keeps a copy of each answered lookup, its photos and its answer, with no set end date, and counts of what is looked up (the kind of lookup, the species and breed, the subject in a few words, and the country or US state). None of it is tied to you, your device or your internet address, and you can turn both off in Settings.</li>
       <li>“Did this help?” under an answer sends your yes or no. It sends your note, or the question and answer, only if you choose.</li>
       <li>Rooststead Pro is bought through Apple. We never see your payment details.</li>
       <li>The counts and statistics made from many people’s use, with nothing in them that identifies anyone, belong to us. We may publish them and use them to improve Rooststead and to build new things. We never try to find out who is behind them.</li>
@@ -91,7 +91,7 @@
   <p>Rooststead’s answers are written by AI. To learn what people need, what helps and what is wrong, the server keeps tallies of what is looked up. For each answered lookup it adds one to these counts:</p>
   <ul>
     <li><strong>The kind of lookup</strong> (for example a diagnostic or a medication lookup), whether the plan was free or Pro, and whether the answer was marked urgent.</li>
-    <li><strong>The species.</strong></li>
+    <li><strong>The species, and the breed when one is entered</strong> (for example “dog (labrador)”).</li>
     <li><strong>The subject, in a few plain words</strong>, such as “malassezia dermatitis”, “terbinafine” or “johnson grass”. It is the name of the condition, product or plant the lookup was about, or a short general subject the AI names for a question. It is never the sentence you typed. The server drops any subject longer than seven words, or with a run of five or more digits, an @ or a web address.</li>
     <li><strong>The country, or the US state</strong>, the request came from. Our server reads this from a note its host (Cloudflare) puts on each request. It is worked out from your internet address. The address itself is not kept.</li>
   </ul>
@@ -111,7 +111,7 @@
   <h3>“Did this help?”</h3>
   <p>Under an answer the app asks “Did this help?”. Nothing is sent unless you tap <strong>Yes</strong> or <strong>No</strong>. Your answer is then sent, with the app’s device id (used only for the daily limit above), and counted against that answer’s subject (and noted on the kept copy of that lookup, if there is one). If you tap No you can pick a reason and add a short note, and you can tick a box to send the question and the answer as text so we can check it. Photos are never sent with feedback, and the app does not include your animal’s name.</p>
   <p>After a yes or no, the app asks <strong>What are you doing about it?</strong> (home care, a veterinarian, a store or pharmacy product, or not sure yet). If you tap one, it is sent with the same ticket and only counted against that answer’s subject and noted on the kept copy of that lookup, like the yes or no; nothing else about it is kept.</p>
-  <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. Each kept feedback is stored with the day, the kind of lookup, the species, the subject and the country or US state the lookup came from, so we can see which answers need fixing where. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
+  <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. Each kept feedback is stored with the day, the kind of lookup, the species and breed, the subject and the country or US state the lookup came from, so we can see which answers need fixing where. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
 
   <h3>What others see</h3>
   <p>Under an answer the app can show <strong>Others with this</strong>: totals from everyone who looked up the same subject in the last four weeks, namely how many lookups, the share of those who answered “Did this help?” who said yes, and the share who chose home care, a veterinarian or a store or pharmacy product. They are made only from the counts above, never from one person’s lookup, and each total is shown only once at least 10 lookups or answers are behind it. They come back with the answer to your own lookup, so nothing extra is sent to get them.</p>
