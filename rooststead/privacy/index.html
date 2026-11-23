@@ -24,8 +24,7 @@
       <li>No account, no ads and no tracking.</li>
       <li>Everything you save (your animals, the lump log, the library, your lists and settings) stays on your device.</li>
       <li>A lookup sends the animal’s details, what you typed and any photos you attached (and, for a Field Computer question, that conversation and the animal’s lump log) to our server, which passes them to Anthropic’s Claude to write the answer. None of that is sent until you agree in the app.</li>
-      <li>Our server does not keep what you typed, your photos or the answers.</li>
-      <li>To make the answers better, it keeps counts of what is looked up (the kind of lookup, the species, the subject in a few words, and the country or US state). The counts are tied to no one, and you can turn them off in Settings.</li>
+      <li>To make the answers better, our server keeps a copy of each answered lookup and its answer for up to one year, and counts of what is looked up (the kind of lookup, the species, the subject in a few words, and the country or US state). None of it is tied to you, your device or your internet address, the copies never include your photos, and you can turn both off in Settings.</li>
       <li>“Did this help?” under an answer sends your yes or no. It sends your note, or the question and answer, only if you choose.</li>
       <li>Rooststead Pro is bought through Apple. We never see your payment details.</li>
       <li>We do not sell your information, and we do not share it for advertising.</li>
@@ -67,7 +66,7 @@
   <p>No one else receives your lookups. We do not sell them, and no advertiser sees them.</p>
 
   <h2>What our server keeps</h2>
-  <p>The server works on a lookup only while it is answering it. Once the answer has been sent back to the app, the server keeps none of what you typed, none of your photos and none of the answer. The one exception is feedback you choose to send: see “Did this help?” below.</p>
+  <p>Unless you turn it off, the server keeps a copy of each answered lookup and its answer to make the answers better: see “A copy of each lookup” below. It never keeps the photos you attach to a lookup. Feedback you choose to send is described under “Did this help?”.</p>
   <p>It keeps these counts so the limits work:</p>
   <ul>
     <li><strong>Free lookups and free photo requests used by each install.</strong> The counts are kept under a scrambled form of the device id. The scrambling works one way: the code cannot be turned back into the id. These counts are kept so the free lookups cannot be reset.</li>
@@ -78,7 +77,8 @@
   </ul>
   <p>It does not keep or log:</p>
   <ul>
-    <li>what you typed, your animals’ details, your photos or the answers, except feedback you choose to send;</li>
+    <li>the photos you attach to a lookup (photos you choose to donate are described below), or your animal’s name, which the app does not send;</li>
+    <li>a copy of a lookup made with Usage analytics turned off, and, in its logs, ever what you typed or the answers;</li>
     <li>your name, email or Apple Account, which it never receives;</li>
     <li>the device id itself, or Apple’s transaction numbers;</li>
     <li>your internet (IP) address. Like any internet service, our server receives that address when the app connects. It uses it only to make the scrambled network code above;</li>
@@ -94,11 +94,21 @@
     <li><strong>The country, or the US state</strong>, the request came from. Our server reads this from a note its host (Cloudflare) puts on each request. It is worked out from your internet address. The address itself is not kept.</li>
   </ul>
   <p>These are counts by day and by week. They are not tied to your install, your subscription or your internet address, and they are deleted after 400 days. We also count how many lookups failed and how many were stopped because the free lookups were used up.</p>
-  <p><strong>You can turn the tallies off.</strong> In the app open <strong>Settings</strong>, tap <strong>Manage</strong> under <strong>Privacy &amp; data</strong>, and tap <strong>Disable</strong> under <strong>Usage analytics</strong>. The server then keeps no tallies for your lookups, and “Did this help?” is not shown.</p>
+  <h3>A copy of each lookup</h3>
+  <p>For each answered lookup the server also keeps a copy of what was asked and of the answer. We read these copies to see what people need, to check the answers and to improve them, the instructions the AI follows and the guide built into the app. A copy holds:</p>
+  <ul>
+    <li>the date, the kind of lookup, whether the plan was free or Pro, and the country or US state;</li>
+    <li>the animal’s details as the app sent them: species, breed, age, weight, spay or neuter status, allergies and notes (never its name);</li>
+    <li>what you typed and chose for that lookup and, for a Field Computer question, that conversation and the animal’s lump log entries;</li>
+    <li>how many photos came with it, but never the photos;</li>
+    <li>the answer and, if you send them, your “Did this help?” answer, its reason and what you chose to do about it.</li>
+  </ul>
+  <p>Before a copy is stored, anything in it that looks like an email address, a phone number or a street address is replaced. A copy is not tied to your install, your subscription or your internet address. Copies are kept for up to one year (at most the newest 100,000), then deleted. They are kept only for lookups made after you agree to the app’s notice that describes them. Please do not put personal details in what you type.</p>
+  <p><strong>You can turn this off.</strong> In the app open <strong>Settings</strong>, tap <strong>Manage</strong> under <strong>Privacy &amp; data</strong>, and tap <strong>Disable</strong> under <strong>Usage analytics</strong>. The server then keeps no copy of your lookups and no tallies for them, and “Did this help?” is not shown.</p>
 
   <h3>“Did this help?”</h3>
-  <p>Under an answer the app asks “Did this help?”. Nothing is sent unless you tap <strong>Yes</strong> or <strong>No</strong>. Your answer is then sent, with the app’s device id (used only for the daily limit above), and counted against that answer’s subject. If you tap No you can pick a reason and add a short note, and you can tick a box to send the question and the answer as text so we can check it. Photos are never sent with feedback, and the app does not include your animal’s name.</p>
-  <p>After a yes or no, the app asks <strong>What are you doing about it?</strong> (home care, a veterinarian, a store or pharmacy product, or not sure yet). If you tap one, it is sent with the same ticket and only counted against that answer’s subject, like the yes or no; nothing else about it is kept.</p>
+  <p>Under an answer the app asks “Did this help?”. Nothing is sent unless you tap <strong>Yes</strong> or <strong>No</strong>. Your answer is then sent, with the app’s device id (used only for the daily limit above), and counted against that answer’s subject (and noted on the kept copy of that lookup, if there is one). If you tap No you can pick a reason and add a short note, and you can tick a box to send the question and the answer as text so we can check it. Photos are never sent with feedback, and the app does not include your animal’s name.</p>
+  <p>After a yes or no, the app asks <strong>What are you doing about it?</strong> (home care, a veterinarian, a store or pharmacy product, or not sure yet). If you tap one, it is sent with the same ticket and only counted against that answer’s subject and noted on the kept copy of that lookup, like the yes or no; nothing else about it is kept.</p>
   <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
 
   <h3>What others see</h3>
@@ -141,19 +151,19 @@
   <h2>Erasing your information</h2>
   <ul>
     <li><strong>On your device:</strong> open Settings in the app and tap <strong>Erase everything on this device</strong>. Deleting the app also deletes what it saved. The random device id is not one of your records. It may stay in your device’s Keychain, including after the app is deleted.</li>
-    <li><strong>On our server:</strong> donated photos are deleted from Settings (see “Photos you donate”). The counts described above are kept under scrambled codes that we cannot match to a person. Feedback you chose to send (your note, and the question and answer if you ticked the box) is kept as text for up to 400 days and is not tied to your install. If you tell us what it said, we can find it and delete it. Email us and we will answer within 45 days.</li>
+    <li><strong>On our server:</strong> donated photos are deleted from Settings (see “Photos you donate”). The counts described above are kept under scrambled codes that we cannot match to a person. Copies of lookups are not tied to your install either: if you tell us roughly when and what you asked, we can find and delete them. Feedback you chose to send (your note, and the question and answer if you ticked the box) is kept as text for up to 400 days and is not tied to your install. If you tell us what it said, we can find it and delete it. Email us and we will answer within 45 days.</li>
     <li><strong>With our providers:</strong> anything Anthropic or Cloudflare kept for safety is deleted on their own schedules, under their policies linked above.</li>
   </ul>
 
   <h2>Withdrawing the AI permission</h2>
   <p>You can take back your agreement to the lookup notice at any time: in the app open Settings, tap Manage under Privacy &amp; data, and tap Revoke under Data processing consent. After that the app sends no lookups until you agree again. Everything that works without a lookup keeps working. Withdrawing does not undo lookups that were already sent.</p>
-  <p>You can also turn AI lookups off: open Settings in the app, find <strong>AI lookups</strong> and tap <strong>Turn off</strong>. Then the app sends no lookups at all, and its answers come from a guide written into the app and stored on your device. The same guide answers when a lookup cannot be made, for example with no connection; nothing is sent for those answers.</p>
+  <p>You can also turn AI lookups off: in the app open <strong>Settings</strong>, tap <strong>Manage</strong> under <strong>Privacy &amp; data</strong>, and tap <strong>Disable</strong> under <strong>AI-assisted lookups</strong>. Then the app sends no lookups at all, and its answers come from a guide written into the app and stored on your device. The same guide answers when a lookup cannot be made, for example with no connection; nothing is sent for those answers.</p>
 
   <h2>Security</h2>
-  <p>Lookups travel to our server over an encrypted connection (HTTPS). The server keeps no lookup content, except feedback text people choose to send, so nothing else of a lookup is stored there to be exposed. The records on your device are protected by your device’s own passcode and security: anyone who can unlock your device can open the app and read them. No system is perfectly secure, and we cannot promise that nothing will ever go wrong.</p>
+  <p>Lookups travel to our server over an encrypted connection (HTTPS). The copies of lookups and the feedback the server keeps hold no photos, device ids or internet addresses, and only Rooststead’s owner can read them, behind a password. The records on your device are protected by your device’s own passcode and security: anyone who can unlock your device can open the app and read them. No system is perfectly secure, and we cannot promise that nothing will ever go wrong.</p>
 
   <h2>Your privacy rights</h2>
-  <p>Depending on where you live, for example in a US state with a consumer privacy law, you may have the right to know what personal information a business holds about you, to get a copy of it, to correct it, to delete it, and to opt out of its sale, of sharing for targeted advertising and of certain profiling (we do none of those three). Our server keeps counts under scrambled codes and the feedback text people choose to send, which is not tied to an install. We can find, copy or delete feedback of yours only if you tell us what it said; for everything else we normally have nothing we can match to a particular person. You can still send a request to <a href="mailto:angeltechcorporationindustries@gmail.com?subject=Rooststead%20privacy%20request">angeltechcorporationindustries<wbr>@gmail.com</a>. We answer within 45 days and tell you what we found. If we decline a request we explain why, and you can appeal by replying to that message. We never treat anyone differently for using these rights. If you live in the European Union, the United Kingdom or another place with a similar law, the same applies: a lookup is sent only with your agreement, which you can withdraw at any time, and you can also complain to your local data protection authority.</p>
+  <p>Depending on where you live, for example in a US state with a consumer privacy law, you may have the right to know what personal information a business holds about you, to get a copy of it, to correct it, to delete it, and to opt out of its sale, of sharing for targeted advertising and of certain profiling (we do none of those three). Our server keeps counts under scrambled codes, copies of lookups and the feedback text people choose to send, none of it tied to an install. We can find, copy or delete a lookup or feedback of yours only if you tell us what it said; for everything else we normally have nothing we can match to a particular person. You can still send a request to <a href="mailto:angeltechcorporationindustries@gmail.com?subject=Rooststead%20privacy%20request">angeltechcorporationindustries<wbr>@gmail.com</a>. We answer within 45 days and tell you what we found. If we decline a request we explain why, and you can appeal by replying to that message. We never treat anyone differently for using these rights. If you live in the European Union, the United Kingdom or another place with a similar law, the same applies: a lookup is sent only with your agreement, which you can withdraw at any time, and you can also complain to your local data protection authority.</p>
 
   <h2>This website</h2>
   <p>These pages use no cookies, no scripts and no trackers. They are hosted by GitHub Pages. Like most web hosts, GitHub may keep short technical logs, such as IP addresses, to run and secure the service. We do not use them to identify anyone.</p>
