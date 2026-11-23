@@ -17,6 +17,7 @@
   <p class="date">Effective November 23, 2026</p>
 
   <p>Rooststead (on the App Store, Rooststead: Field Vet) is a home animal-care manual for iPhone and iPad. It is made and run by Angel Tech Corporation Industries L.L.C., an Oklahoma limited liability company, 811 N Market, Watonga, Oklahoma 73772, USA (“we”, “us”). This policy says what happens to your information when you use the app.</p>
+  <p>This policy is part of Rooststead’s <a href="../terms/">Terms of Use and End User License Agreement</a>. You accept both when you tap I agree in the app. Where a law or Apple’s rules require a separate consent, the app asks for it separately: nothing about you or your animals is sent until you agree to the lookup notice described below, and you can withdraw that agreement at any time.</p>
 
   <div class="summary">
     <strong>The short version</strong>
@@ -27,6 +28,7 @@
       <li>To make the answers better, our server keeps a copy of each answered lookup, its photos and its answer, with no set end date, and counts of what is looked up (the kind of lookup, the species, the subject in a few words, and the country or US state). None of it is tied to you, your device or your internet address, and you can turn both off in Settings.</li>
       <li>“Did this help?” under an answer sends your yes or no. It sends your note, or the question and answer, only if you choose.</li>
       <li>Rooststead Pro is bought through Apple. We never see your payment details.</li>
+      <li>The counts and statistics made from many people’s use, with nothing in them that identifies anyone, belong to us. We may publish them and use them to improve Rooststead and to build new things. We never try to find out who is behind them.</li>
       <li>We do not sell your information, and we do not share it for advertising.</li>
     </ul>
   </div>
@@ -69,11 +71,11 @@
   <p>Unless you turn it off, the server keeps a copy of each answered lookup, its photos and its answer to make the answers better: see “A copy of each lookup” below. Feedback you choose to send is described under “Did this help?”.</p>
   <p>It keeps these counts so the limits work:</p>
   <ul>
-    <li><strong>Free lookups and free photo requests used by each install.</strong> The counts are kept under a scrambled form of the device id. The scrambling works one way: the code cannot be turned back into the id. These counts are kept so the free lookups cannot be reset.</li>
+    <li><strong>Free lookups and free photo requests used by each install.</strong> The counts are kept under a scrambled form of the device id. The scrambling works one way: the code cannot be turned back into the id. These counts are kept so the free lookups cannot be reset, for as long as Rooststead runs.</li>
     <li><strong>Today’s lookups and photo requests for each subscription</strong>, under a scrambled form of Apple’s subscription number. They are deleted shortly after the day ends.</li>
     <li><strong>Today’s free lookups from each internet connection</strong>, under a scrambled form of the network’s address, and a total for the whole app. These guard against abuse and are deleted shortly after the day ends. Short per-minute limits work the same way.</li>
     <li><strong>How many “Did this help?” answers each install sent today</strong>, under the same scrambled form of the device id, so feedback cannot be flooded. Deleted shortly after the day ends.</li>
-    <li><strong>One log line for each request:</strong> the kind of lookup, whether the plan was free or Pro, whether it worked and how long it took.</li>
+    <li><strong>One log line for each request:</strong> which part of the server was asked, the kind of lookup, whether the plan was free or Pro, whether it worked (and if not, a short code for why) and how long it took. Our host, Cloudflare, keeps these lines for a few days, then deletes them.</li>
   </ul>
   <p>It does not keep or log:</p>
   <ul>
@@ -90,7 +92,7 @@
   <ul>
     <li><strong>The kind of lookup</strong> (for example a diagnostic or a medication lookup), whether the plan was free or Pro, and whether the answer was marked urgent.</li>
     <li><strong>The species.</strong></li>
-    <li><strong>The subject, in a few plain words</strong>, such as “malassezia dermatitis”, “terbinafine” or “johnson grass”. It is the name of the condition, product or plant the lookup was about, or a short general subject the AI names for a question. It is never the sentence you typed, and anything that looks like a name, a number, an address or an email is left out.</li>
+    <li><strong>The subject, in a few plain words</strong>, such as “malassezia dermatitis”, “terbinafine” or “johnson grass”. It is the name of the condition, product or plant the lookup was about, or a short general subject the AI names for a question. It is never the sentence you typed. The server drops any subject longer than seven words, or with a run of five or more digits, an @ or a web address.</li>
     <li><strong>The country, or the US state</strong>, the request came from. Our server reads this from a note its host (Cloudflare) puts on each request. It is worked out from your internet address. The address itself is not kept.</li>
   </ul>
   <p>These are counts by day and by week. They are not tied to your install, your subscription or your internet address, and they are deleted after 400 days. We also count how many lookups failed and how many were stopped because the free lookups were used up.</p>
@@ -109,17 +111,26 @@
   <h3>“Did this help?”</h3>
   <p>Under an answer the app asks “Did this help?”. Nothing is sent unless you tap <strong>Yes</strong> or <strong>No</strong>. Your answer is then sent, with the app’s device id (used only for the daily limit above), and counted against that answer’s subject (and noted on the kept copy of that lookup, if there is one). If you tap No you can pick a reason and add a short note, and you can tick a box to send the question and the answer as text so we can check it. Photos are never sent with feedback, and the app does not include your animal’s name.</p>
   <p>After a yes or no, the app asks <strong>What are you doing about it?</strong> (home care, a veterinarian, a store or pharmacy product, or not sure yet). If you tap one, it is sent with the same ticket and only counted against that answer’s subject and noted on the kept copy of that lookup, like the yes or no; nothing else about it is kept.</p>
-  <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
+  <p>We keep feedback for up to 400 days, at most the newest 5,000, and it is not tied to your install. Each kept feedback is stored with the day, the kind of lookup, the species, the subject and the country or US state the lookup came from, so we can see which answers need fixing where. We read it to correct and improve the answers. Please do not put personal details in a note.</p>
 
   <h3>What others see</h3>
   <p>Under an answer the app can show <strong>Others with this</strong>: totals from everyone who looked up the same subject in the last four weeks, namely how many lookups, the share of those who answered “Did this help?” who said yes, and the share who chose home care, a veterinarian or a store or pharmacy product. They are made only from the counts above, never from one person’s lookup, and each total is shown only once at least 10 lookups or answers are behind it. They come back with the answer to your own lookup, so nothing extra is sent to get them.</p>
 
+  <h2>Statistics that identify no one</h2>
+  <p>The counts above, the “Others with this” totals, and what we learn from feedback and donated photos are turned into statistics that cannot reasonably be linked to any person or device (“aggregate data”). Aggregate data belongs to Angel Tech Corporation Industries L.L.C., as the Terms of Use say. We use it to correct and improve the answers and the built-in guide, to train Rooststead’s own photo model, and to understand which animal problems are common where and when. We may publish it, for example as reports on animal-health trends, use it in new products and services, and share or license it, but only as totals or other information that identifies no one.</p>
+  <ul>
+    <li>Aggregate data never includes what you typed, your animals’ names, your photos, your device id or your internet address.</li>
+    <li>We keep aggregate data only in that form and take reasonable measures to keep it that way. We publish or share no total made from fewer than 10 people.</li>
+    <li>We do not try to work out who is behind aggregate data. Anyone we share or license it to must agree in writing to the same duties and to pass them on, and the Terms of Use forbid anyone who sees the “Others with this” totals to try.</li>
+    <li>Sharing aggregate data is not a sale of personal information, and it is never used to target advertising at anyone.</li>
+  </ul>
+
   <h2>Anthropic and Cloudflare</h2>
-  <p>Anthropic and Cloudflare handle this data for us, as our service providers, under their own terms. Each may keep request data for a limited time for safety and to prevent abuse. Their own pages say how: <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</p>
+  <p>Anthropic and Cloudflare handle this data for us, as our service providers. Their terms with us let them use it only to provide and secure their services to us, not for advertising, and Anthropic’s commercial terms say it does not train its models on it. Each may keep request data for a limited time for safety and to prevent abuse. Their own pages say how: <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</p>
   <p>Our server and our providers operate in the United States and other countries, so a lookup may be handled outside the country you are in.</p>
 
   <h2>Photos you donate</h2>
-  <p>After a diagnostic lookup with a photo, the app offers <strong>Donate this photo to teach Rooststead’s photo model</strong>. Nothing is donated unless you tap it, say what the problem turned out to be (or that it is not known yet), and tick that you took the photos or may share them and that they show no people. It is off while <strong>Help improve Rooststead</strong> or <strong>AI lookups</strong> is turned off.</p>
+  <p>After a diagnostic lookup with a photo, the app offers <strong>Donate this photo to teach Rooststead’s photo model</strong>. Nothing is donated unless you tap it, say what the problem turned out to be (or that it is not known yet), and tick that you took the photos or may share them and that they show no people. It is off while <strong>Usage analytics</strong> or <strong>AI-assisted lookups</strong> is disabled.</p>
   <ul>
     <li><strong>What is sent and kept:</strong> the photos of that lookup (as the app redrew them, which leaves out the camera details and any location stored in the original), the species, the affected areas, what it turned out to be, who said so (a veterinarian, your own judgment, or not confirmed), and the AI’s best match as a hint. Not your animal’s name, not your notes, not your device id, not your address.</li>
     <li><strong>What for:</strong> to train and test Rooststead’s own photo recognition and to check Rooststead’s answers. Never sold, never shown to other people as photos, never used for advertising.</li>
@@ -151,7 +162,7 @@
   <h2>Erasing your information</h2>
   <ul>
     <li><strong>On your device:</strong> open Settings in the app and tap <strong>Erase everything on this device</strong>. Deleting the app also deletes what it saved. The random device id is not one of your records. It may stay in your device’s Keychain, including after the app is deleted.</li>
-    <li><strong>On our server:</strong> donated photos are deleted from Settings (see “Photos you donate”). The counts described above are kept under scrambled codes that we cannot match to a person. Copies of lookups are not tied to your install either: if you tell us roughly when and what you asked, or send us the photo, we can find and delete them. Feedback you chose to send (your note, and the question and answer if you ticked the box) is kept as text for up to 400 days and is not tied to your install. If you tell us what it said, we can find it and delete it. Email us and we will answer within 45 days.</li>
+    <li><strong>On our server:</strong> donated photos are deleted from Settings (see “Photos you donate”). The free-lookup count is kept under a one-way code made from the app’s device id: it is linked to your install, not to your name, and holds only a number. We keep it even if you ask us to delete it, because it stops the free lookups being reset (fraud prevention and security). The tallies are not linked to an install. Copies of lookups are not tied to your install either: if you tell us roughly when and what you asked, or send us the photo, we can find and delete them. Feedback you chose to send (your note, and the question and answer if you ticked the box) is kept as text for up to 400 days and is not tied to your install. If you tell us what it said, we can find it and delete it. Email us and we will answer within 45 days (within one month if you are in the EU, the EEA, the UK or Switzerland).</li>
     <li><strong>With our providers:</strong> anything Anthropic or Cloudflare kept for safety is deleted on their own schedules, under their policies linked above.</li>
   </ul>
 
@@ -163,13 +174,27 @@
   <p>Lookups travel to our server over an encrypted connection (HTTPS). The copies of lookups, their photos and the feedback the server keeps hold no device ids or internet addresses, and only Rooststead’s owner can read them, behind a password. The records on your device are protected by your device’s own passcode and security: anyone who can unlock your device can open the app and read them. No system is perfectly secure, and we cannot promise that nothing will ever go wrong.</p>
 
   <h2>Your privacy rights</h2>
-  <p>Depending on where you live, for example in a US state with a consumer privacy law, you may have the right to know what personal information a business holds about you, to get a copy of it, to correct it, to delete it, and to opt out of its sale, of sharing for targeted advertising and of certain profiling (we do none of those three). Our server keeps counts under scrambled codes, copies of lookups and the feedback text people choose to send, none of it tied to an install. We can find, copy or delete a lookup or feedback of yours only if you tell us what it said; for everything else we normally have nothing we can match to a particular person. You can still send a request to <a href="mailto:angeltechcorporationindustries@gmail.com?subject=Rooststead%20privacy%20request">angeltechcorporationindustries<wbr>@gmail.com</a>. We answer within 45 days and tell you what we found. If we decline a request we explain why, and you can appeal by replying to that message. We never treat anyone differently for using these rights. If you live in the European Union, the United Kingdom or another place with a similar law, the same applies: a lookup is sent only with your agreement, which you can withdraw at any time, and you can also complain to your local data protection authority.</p>
+  <p>Depending on where you live, for example in a US state with a consumer privacy law, you may have the right to know what personal information a business holds about you, to get a copy of it, to correct it, to delete it, and to opt out of its sale, of sharing for targeted advertising and of certain profiling (we do none of those three). Our server keeps the free-lookup count under a one-way code made from the app’s device id (linked to an install, not to a name, and kept to stop the free lookups being reset), tallies that are not linked to anyone, copies of lookups, and the feedback text people choose to send, which is not tied to an install. We can find, copy or delete a lookup or feedback of yours only if you tell us what it said; otherwise we have nothing we can match to a particular person. You can still send a request to <a href="mailto:angeltechcorporationindustries@gmail.com?subject=Rooststead%20privacy%20request">angeltechcorporationindustries<wbr>@gmail.com</a>. We answer within 45 days (within one month in the EU, the EEA, the UK or Switzerland) and tell you what we found. If we decline a request we explain why, and you can appeal by replying to that message. We never treat anyone differently for using these rights. If you live in the European Union, the United Kingdom or another place with a similar law, the same applies: a lookup is sent only with your agreement, which you can withdraw at any time, and you can also complain to your local data protection authority.</p>
+
+  <h2>If our business is sold</h2>
+  <p>If our business or Rooststead is sold or merged, the counts, copies of lookups, feedback and donated photos we hold may pass to the new owner, who must keep the promises in this policy. We will tell you in the app before that happens.</p>
+
+  <h2>If you are in the EU, the EEA, the UK or Switzerland</h2>
+  <p>Angel Tech Corporation Industries L.L.C. (address below) is responsible for your information. These are the legal bases we rely on:</p>
+  <ul>
+    <li>Answering a lookup you ask for: to perform our agreement with you (GDPR Article 6(1)(b)) and, for sending it to Anthropic, your consent on the lookup notice (Article 6(1)(a)).</li>
+    <li>The free-lookup count, the daily limits and the abuse limits: our legitimate interest in keeping Rooststead fair and secure (Article 6(1)(f)).</li>
+    <li>The tallies and the “Others with this” totals: our legitimate interest in improving the answers (Article 6(1)(f)). You can object at any time: turn off Usage analytics in Settings, or email us.</li>
+    <li>Kept copies of lookups and their photos: your agreement on the lookup notice (Article 6(1)(a)); turn off Usage analytics to stop them.</li>
+    <li>Feedback text and donated photos: your consent (Article 6(1)(a)), which you can withdraw.</li>
+  </ul>
+  <p>Cloudflare and Anthropic handle data in the United States. They protect transfers from Europe under the European Commission’s Standard Contractual Clauses in their data processing terms, or the EU-U.S. Data Privacy Framework where a provider is certified. You may ask us for a copy of the safeguards. You have the rights of access, correction, deletion, restriction, portability and objection, and the right to complain to your data protection authority.</p>
 
   <h2>This website</h2>
   <p>These pages use no cookies, no scripts and no trackers. They are hosted by GitHub Pages. Like most web hosts, GitHub may keep short technical logs, such as IP addresses, to run and secure the service. We do not use them to identify anyone.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If we change this policy, we update this page and the date at the top. If a future version of the app sent or kept anything more than this page describes, we would change this page and say so in the release notes before that version came out.</p>
+  <p>If we change this policy, we update this page and the date at the top. If a future version of the app sent or kept anything more than this page describes, we would change this page and say so in the release notes before that version came out. We will not use information we already hold in a materially different way, or collect more personal information, without first asking for your agreement in the app.</p>
 
   <h2>Contact</h2>
   <p>Angel Tech Corporation Industries L.L.C.<br>811 N Market, Watonga, Oklahoma 73772, USA<br><a href="mailto:angeltechcorporationindustries@gmail.com">angeltechcorporationindustries<wbr>@gmail.com</a></p>
@@ -180,7 +205,7 @@
     <p class="mark" translate="no">ANGEL TECH<sup>™</sup></p>
     <p>© 2026 Angel Tech Corporation Industries L.L.C. All rights reserved.</p>
     <p class="small">ANGEL TECH, the ANGEL TECH sigil and Rooststead are trademarks of Angel Tech Corporation Holding L.C., used under license by Angel Tech Corporation Industries L.L.C.</p>
-    <p><a href="../">About</a> · <a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Use</a> · <a href="mailto:angeltechcorporationindustries@gmail.com">angeltechcorporationindustries<wbr>@gmail.com</a></p>
+    <p><a href="../">About</a> · <a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Use (EULA)</a> · <a href="mailto:angeltechcorporationindustries@gmail.com">angeltechcorporationindustries<wbr>@gmail.com</a></p>
   </footer>
 </div>
 </body>
