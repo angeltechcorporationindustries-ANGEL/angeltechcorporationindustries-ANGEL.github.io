@@ -9,5 +9,6 @@ Public privacy policies, terms and support pages for our apps, served by GitHub 
 - Rooststead: Field Vet: [about](rooststead/) · [privacy](rooststead/privacy/) · [terms](rooststead/terms/) · [support](rooststead/support/)
 - Strata: Field Geology: [about](strata/) · [privacy](strata/privacy/) · [terms](strata/terms/) · [support](strata/support/)
 - Moose Simulator: Wild Year: [about](moose-sim/) · [privacy](moose-sim/privacy/) · [terms](moose-sim/terms/) · [support](moose-sim/support/)
+- Blackletter: Bar Exam Practice: [about](blackletter/) · [privacy](blackletter/privacy/) · [terms](blackletter/terms/) · [support](blackletter/support/)
 
-The source of these pages lives in each app's private repository under `site/` (Combo Buster: `Addictive_Tapping_game`; Khalohfeh: `Triple_Point`; Pathocarnageride: `Pathocarnage_ride`; ThrustWright: `ThrustWright`; Rooststead: `Rooststead`; Strata: `Field_Geology`; Moose Simulator: `Moose_Sim`).
+The source of these pages lives in each app's private repository under `site/` (Combo Buster: `Addictive_Tapping_game`; Khalohfeh: `Triple_Point`; Pathocarnageride: `Pathocarnage_ride`; ThrustWright: `ThrustWright`; Rooststead: `Rooststead`; Strata: `Field_Geology`; Moose Simulator: `Moose_Sim`; Blackletter: `Blackletter`).
