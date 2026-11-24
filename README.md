@@ -7,5 +7,6 @@ Public privacy policies, terms and support pages for our apps, served by GitHub 
 - Pathocarnageride: [about](pathocarnageride/) · [privacy](pathocarnageride/privacy/) · [terms](pathocarnageride/terms/) · [support](pathocarnageride/support/)
 - ThrustWright: Jet Designer: [about](thrustwright/) · [privacy](thrustwright/privacy/) · [terms](thrustwright/terms/) · [support](thrustwright/support/)
 - Rooststead: Field Vet: [about](rooststead/) · [privacy](rooststead/privacy/) · [terms](rooststead/terms/) · [support](rooststead/support/)
+- Moose Simulator: Wild Year: [about](moose-sim/) · [privacy](moose-sim/privacy/) · [terms](moose-sim/terms/) · [support](moose-sim/support/)
 
-The source of these pages lives in each app's private repository under `site/` (Combo Buster: `Addictive_Tapping_game`; Khalohfeh: `Triple_Point`; Pathocarnageride: `Pathocarnage_ride`; ThrustWright: `ThrustWright`; Rooststead: `Rooststead`).
+The source of these pages lives in each app's private repository under `site/` (Combo Buster: `Addictive_Tapping_game`; Khalohfeh: `Triple_Point`; Pathocarnageride: `Pathocarnage_ride`; ThrustWright: `ThrustWright`; Rooststead: `Rooststead`; Moose Simulator: `Moose_Sim`).
